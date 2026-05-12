@@ -258,3 +258,6 @@ ticket-management-app/
 ├── render.yaml             # One-click Render deployment
 └── .env.example            # Environment variable template
 ```
+=======
+# ticket-management-app
+>>>>>>> c124fd6e8d11e73d4fecd1cf5376f720855d2a00

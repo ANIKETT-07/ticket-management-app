@@ -196,27 +196,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Active filter chips */}
-      {hasFilters && (
-        <div className="flex gap-2 flex-wrap items-center">
-          <span className="text-xs text-slate-400 font-medium">Active:</span>
-          {days !== null && (
-            <span className="flex items-center gap-1 bg-brand-100 text-brand-700 text-xs font-semibold px-2.5 py-1 rounded-full">
-              Last {days}d <button onClick={() => setDays(null)}><X size={10} /></button>
-            </span>
-          )}
-          {channel && (
-            <span className="flex items-center gap-1 bg-sky-100 text-sky-700 text-xs font-semibold px-2.5 py-1 rounded-full capitalize">
-              {channel} <button onClick={() => setChannel('')}><X size={10} /></button>
-            </span>
-          )}
-          {category && (
-            <span className="flex items-center gap-1 bg-violet-100 text-violet-700 text-xs font-semibold px-2.5 py-1 rounded-full">
-              {category} <button onClick={() => setCategory('')}><X size={10} /></button>
-            </span>
-          )}
-        </div>
-      )}
 
       {/* ── KPIs ── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">

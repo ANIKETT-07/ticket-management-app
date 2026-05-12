@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    background: #f5f3ff;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl shadow-card p-4 sm:p-6;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700 px-4 py-2 rounded-xl font-semibold text-sm transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-brand-50 text-brand-700 hover:bg-brand-100 px-4 py-2 rounded-xl font-semibold text-sm transition-colors;
+  }
+  .input {
+    @apply border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent;
+  }
+  .select {
+    @apply border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent bg-white;
+  }
+  /* Recharts containers must not overflow their grid cell on small screens */
+  .chart-wrap {
+    @apply w-full min-w-0 overflow-hidden;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #c7d2fe; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #818cf8; }
+
+/* Mobile drawer slide-in */
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slide-in 0.22s cubic-bezier(0.4, 0, 0.2, 1) both;
+}

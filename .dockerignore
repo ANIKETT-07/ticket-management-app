@@ -1,0 +1,16 @@
+**/__pycache__
+**/*.pyc
+**/*.pyo
+.git
+.gitignore
+venv
+.venv
+*.sqlite3
+react-frontend/node_modules
+react-frontend/dist
+frontend/
+docs/
+tests/
+data/
+docker-compose.yml
+backend/Dockerfile

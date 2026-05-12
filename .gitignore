@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# SQLite db (data resets on deploy anyway)
+*.sqlite3
+
+# React
+react-frontend/node_modules/
+react-frontend/dist/
+
+# Old Streamlit frontend
+frontend/
+
+# Env
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm config *)",
+      "Bash(npm create *)",
+      "Bash(curl -s --max-time 5 http://proxy-server.bms.com:8080)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(curl -v --max-time 15 --proxy http://proxy-server.bms.com:8080 https://registry.npmjs.org/react)"
+    ]
+  }
+}

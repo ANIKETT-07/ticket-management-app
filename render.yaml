@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ticket-management-app
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./support_db.sqlite3
+      - key: GEMINI_API_KEY
+        value: ""
